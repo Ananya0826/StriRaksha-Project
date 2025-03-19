@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Safety</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lilita+One&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      background-color: #f8f8f8; /* Off-white background */
+    }
+
+    /* Navbar Styling */
+    header {
+      background-color: #740938; /* Primary color */
+      color: white;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+/* General Button Styling */
+button, .cta-buttons .btn-primary, .cta-buttons .btn-secondary {
+  padding: 10px 25px; /* Increase button size */
+  font-size: 1.2rem;  /* Increase font size */
+  border-radius: 25px; /* Curved border */
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 3px solid #740938; /* Border color same as heading (Primary color) */
+}
+
+button {
+  background-color: transparent; /* Transparent background for generic buttons */
+  color: #740938; /* Primary color text */
+  border: 3px solid #740938; /* Matching border color */
+}
+
+button:hover {
+  background-color: #740938; /* Background changes on hover */
+  color: white; /* Text turns white on hover */
+  transform: scale(1.1); /* Button grows on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Hero Section - Primary and Secondary Button Styling */
+.cta-buttons .btn-primary {
+  background-color: #740938; /* Primary color for btn-primary */
+  color: white;
+}
+
+.cta-buttons .btn-secondary {
+  background-color: #f4f4f4; /* Light color for btn-secondary */
+  color: #740938; /* Primary color for btn-secondary text */
+}
+
+/* Hover Effects for Hero Section Buttons */
+.cta-buttons .btn-primary:hover, .cta-buttons .btn-secondary:hover {
+  background-color: #740938; /* Primary color on hover */
+  color: white;
+  transform: scale(1.1); /* Button grows on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Contact Section Button Styling */
+#contacts button {
+  background-color: white; /* Primary color */
+  color: #740938;
+  border: 3px solid #740938; /* Border color same as heading */
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#contacts button:hover {
+  background-color: #bc7c7c; /* Secondary color on hover */
+  color: white;
+  transform: scale(1.1); /* Button grows on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Register/Login Section - Button Styling */
+#register-login button {
+  background-color:white ; /* Primary color */
+  color: #740938;
+  border: 3px solid #740938; /* Border color same as heading */
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#register-login button:hover {
+  background-color: #bc7c7c; /* Secondary color on hover */
+  color: white;
+  transform: scale(1.1); /* Button grows on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+/* Input Fields (for Register/Login) */
+input[type="text"], input[type="password"], input[type="tel"] {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 3px solid #740938; /* Border color same as headings */
+  background-color: transparent; /* Transparent background */
+  color: #740938; /* Text color same as headings */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  width: 35%; /* Full width of parent container */
+  margin-bottom: 15px; /* Space between inputs */
+}
+
+/* Placeholder Styling */
+input::placeholder {
+  color: #740938; /* Same color as border and headings */
+  opacity: 0.7; /* Slightly faded placeholder text */
+}
+
+/* Focus State for Input Fields */
+input:focus {
+  border-color: #bc7c7c; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow on focus */
+}
+
+/* For Register and Login Forms */
+#register-form input,
+#login-form input {
+  border-radius: 5px; /* No border-radius like buttons */
+}
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-family: 'Acme', sans-serif;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+   h1,h2 {
+  color: #740938;
+} 
+     /* Hero Section */
+     .hero {
+      height: 100vh;
+      background-image: url(Untitled\ design\ \(1\).png);/* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 1rem
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #740938; /* Primary color */
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .btn-primary, .btn-secondary {
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: #740938; /* Primary color */
+    }
+
+    .btn-secondary {
+      background-color: #f4f4f4;
+      color: #740938;
+    }
+    
+    /* About Us Section */
+    #about-us {
+      padding: 4rem 1rem;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    #about-us h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    #about-us p {
+      font-size: 1.2rem;
+    }
+
+    /* Register/Login Section */
+    #register-login {
+      padding: 4rem 1rem;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    #register-login h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    #register-login form input,
+    #register-login form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    /* Learn Section with YouTube Videos */
+    .video-section {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .video-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .video-section .videos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .video-section .videos iframe {
+      width: 100%;
+      height: 180px; /* Reduced height for better fit */
+      margin-bottom: 20px;
+    }
+
+    .video-section a {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .video-section a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Section */
+    #contacts {
+      padding: 4rem 1rem;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    #contacts h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    #contacts .contact-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    #contacts .contact-list li {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    #contacts .add-contact {
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #BC7C7C; /* Primary color */
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+    }
+    h3{
+      color: rgb(34, 33, 33);
+    }
+    /* Secondary color (for headings or important elements) */
+    .hero p {
+      color: #BC7C7C; /* Secondary color */
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="#register-login"><i class="fas fa-user"></i> Register/Login</a></li>
+        <li><a href="#contacts"><i class="fas fa-users"></i> Contacts</a></li>
+        <li><a href="#learn"><i class="fas fa-shield"></i> Learn</a></li>
+        <li><a href="#about-us"><i class="fas fa-handshake"></i> About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+     <h1>Welcome to StriRaksha Website</h1>
+    <h3>Strengthening Women, Securing Future</h3>
+      <p style="color:rgb(34, 33, 33);;">Providing resources, self-defense tutorials, and emergency contacts for women everywhere.</p>
+      <div class="cta-buttons">
+        <a href="#register-login" class="btn-primary">Get Started</a>
+        <a href="#learn" class="btn-secondary">Learn Self-Defense</a>
+      </div>
+    </div>
+  </section>
+   <!-- Register/Login Section -->
+   <section id="register-login">
+    <h2>Register/Login</h2>
+    <!-- Alert Message for Registration/Login -->
+    <div id="alert-message" class="alert-message"></div>
+
+    <!-- Buttons to toggle between Register and Login -->
+    <div>
+      <button id="show-register" onclick="showRegisterForm()">Register</button>
+      <button id="show-login" onclick="showLoginForm()">Login</button>
+    </div>
+
+    <!-- Register Form -->
+    <div id="register-form" style="display: none;">
+      <form id="registerForm">
+        <input type="text" id="register-phone" placeholder="Phone Number" required>
+        <input type="password" id="register-password" placeholder="Password" required>
+        <input type="text" id="register-otp" placeholder="OTP (If Available)" required>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-form" style="display: none;">
+      <form id="loginForm">
+        <input type="text" id="login-phone" placeholder="Phone Number" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Learn Section with YouTube Videos -->
+  <section id="learn" class="video-section">
+    <h2>Learn Self-Defense</h2>
+    <p>Empower yourself with these self-defense tutorials:</p>
+    <div class="videos">
+      <div class="video">
+        <h3>Self-Defense Basics</h3>
+        <iframe src="https://www.youtube.com/embed/KVpxP3ZZtAc?si=C2LiqT-67xKAJCbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Self-Defense Techniques Part 2</h3>
+        <iframe src="https://www.youtube.com/embed/q1pBBRi3XF8?si=pbHfLs5KBI36tEr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Advanced Self-Defense</h3>
+        <iframe src="https://www.youtube.com/embed/pndPbpHLpos?si=g89kyHHj5Gdnxnt9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Self-Defense Techniques for Women</h3>
+        <iframe src="https://www.youtube.com/embed/nep4mLyyQV8?si=bEo1JHXs6Xfd1t1w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Self-Defense Tips and Tricks</h3>
+        <iframe src="https://www.youtube.com/embed/q1pBBRi3XF8?si=yR3D6cu0yyWeAgCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Street Self-Defense Techniques</h3>
+        <iframe src="https://www.youtube.com/embed/9m-x64bKfR4?si=_aQjZLP86HruNyWK" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- See More Videos Link -->
+    <p><a href="https://www.youtube.com/results?search_query=self+defence+techniques" target="_blank">See more self-defense videos on YouTube</a></p>
+  </section>
+  <!-- Contact Section -->
+  <section id="contacts">
+    <h2>Emergency Contacts</h2>
+    <p>Here are some emergency contacts for your safety:</p>
+
+    <ul class="contact-list">
+      <li><strong>Police Station 1:</strong> 112 - City Police</li>
+      <li><strong>Police Station 2:</strong> 101 - District Police</li>
+      <li><strong>Women Helpline:</strong> 181</li>
+      <li><strong>Emergency Medical Service:</strong> 108</li>
+      <li><strong>Fire Department:</strong> 101</li>
+    </ul>
+
+    <div class="add-contact">
+      <div class="contacts">
+      <p>Want to add your personal emergency contacts? 
+        <br>Use your phone's contact list for quick access in case of emergency.</p>
+      </div>
+      <input type="text" placeholder="Add Contact Name" id="contact-name">
+      <input type="text" placeholder="Add Contact Number" id="contact-number">
+      <button onclick="addContact()">Add Contact</button>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about-us">
+    <h2>About Us</h2>
+    <p>Our mission is to create a community where women can access crucial resources, educational content, and support
+      systems to protect themselves in every situation.</p>
+    <p>We believe that every woman should feel secure, confident, and informed. Our platform offers a combination of
+      self-defense tutorials, emergency contact information, and a space to connect with trusted resources.</p>
+    <p>Through technology and awareness, we aim to equip women with the tools and knowledge they need to stay safe and
+      thrive in today’s world. Join us in creating a safer environment for women everywhere.</p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 StriRaksha for Empowering Women.
+      <br>All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Function to add a contact to the emergency contact list
+    function addContact() {
+      const contactName = document.getElementById('contact-name').value;
+      const contactNumber = document.getElementById('contact-number').value;
+
+      if (contactName && contactNumber) {
+        const contactList = document.querySelector('.contact-list');
+        const newContact = document.createElement('li');
+        newContact.innerHTML = `<strong>${contactName}:</strong> ${contactNumber}`;
+        contactList.appendChild(newContact);
+
+        // Clear input fields after adding the contact
+        document.getElementById('contact-name').value = '';
+        document.getElementById('contact-number').value = '';
+      } else {
+        alert('Please enter both name and number.');
+      }
+    }
+
+    // Function to show the Register form
+    function showRegisterForm() {
+      document.getElementById('register-form').style.display = 'block';
+      document.getElementById('login-form').style.display = 'none';
+    }
+
+    // Function to show the Login form
+    function showLoginForm() {
+      document.getElementById('login-form').style.display = 'block';
+      document.getElementById('register-form').style.display = 'none';
+    }
+
+    // Handle Register form submission
+    document.getElementById('registerForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const phone = document.getElementById('register-phone').value;
+      const password = document.getElementById('register-password').value;
+      const otp = document.getElementById('register-otp').value;
+
+      const alertMessage = document.getElementById('alert-message');
+
+      if (phone && password && otp) {
+        alertMessage.style.display = 'block';
+        alertMessage.textContent = 'Successfully Registered!';
+        alertMessage.style.backgroundColor = '#4CAF50';
+      } else {
+        alertMessage.style.display = 'block';
+        alertMessage.textContent = 'Please fill all fields!';
+        alertMessage.style.backgroundColor = '#f44336';
+      }
+    });
+
+    // Handle Login form submission
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const phone = document.getElementById('login-phone').value;
+      const password = document.getElementById('login-password').value;
+
+      const alertMessage = document.getElementById('alert-message');
+
+      if (phone && password) {
+        alertMessage.style.display = 'block';
+        alertMessage.textContent = 'Successfully Logged In!';
+        alertMessage.style.backgroundColor = '#4CAF50';
+      } else {
+        alertMessage.style.display = 'block';
+        alertMessage.textContent = 'Please fill all fields!';
+        alertMessage.style.backgroundColor = '#f44336';
+      }
+    });
+  </script>
+
+</body>
+
+</html>

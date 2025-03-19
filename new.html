@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Safety</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    /* Navbar Styling */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding-top: 100px; /* Space for fixed navbar */
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    /* About Us Section */
+    #about-us {
+      padding: 4rem 1rem;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    #about-us h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #about-us p {
+      font-size: 1.2rem;
+    }
+    /* Register/Login Section */
+    #register-login {
+      padding: 4rem 1rem;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    #register-login h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #register-login form input,
+    #register-login form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+    /* Learn Section with YouTube Videos */
+    .video-section {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    .video-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .video-section .videos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .video-section .videos iframe {
+      width: 30%;
+      height: 250px; /* Reduced height for better fit */
+      margin-bottom: 20px;
+    }
+    .video-section a {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: #333;
+    }
+    .video-section a:hover {
+      text-decoration: underline;
+    }
+    /* Contact Section */
+    #contacts {
+      padding: 4rem 1rem;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    #contacts h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #contacts .contact-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    #contacts .contact-list li {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    #contacts .add-contact {
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#register-login">Register/Login</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#learn">Learn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Women's Safety</h1>
+    <p>Empower Yourself with Knowledge and Technology</p>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about-us">
+    <h2>About Us</h2>
+    <p>We are a team dedicated to improving women's safety through awareness, technology, and self-defense training. Our platform aims to provide essential resources, emergency contacts, and informative self-defense tutorials.</p>
+  </section>
+
+  <!-- Register/Login Section -->
+  <section id="register-login">
+    <h2>Register/Login</h2>
+    
+    <form id="registerForm">
+      <input type="text" id="phone" placeholder="Phone Number" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="text" id="otp" placeholder="OTP (If Available)" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Learn Section with YouTube Videos -->
+  <section id="learn" class="video-section">
+    <h2>Learn Self-Defense</h2>
+    <p>Empower yourself with these self-defense tutorials:</p>
+    <div class="videos">
+      <div class="video">
+        <h3>Self-Defense Basics</h3>
+        <iframe src="https://www.youtube.com/embed/KVpxP3ZZtAc?si=C2LiqT-67xKAJCbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Self-Defense Techniques Part 2</h3>
+        <iframe src="https://www.youtube.com/embed/q1pBBRi3XF8?si=pbHfLs5KBI36tEr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Advanced Self-Defense</h3>
+        <iframe src="https://www.youtube.com/embed/pndPbpHLpos?si=g89kyHHj5Gdnxnt9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Self-Defense Techniques for Women</h3>
+        <iframe src="https://www.youtube.com/embed/nep4mLyyQV8?si=bEo1JHXs6Xfd1t1w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Self-Defense Tips and Tricks</h3>
+        <iframe src="https://www.youtube.com/embed/q1pBBRi3XF8?si=yR3D6cu0yyWeAgCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h3>Street Self-Defense Techniques</h3>
+        <iframe src="https://www.youtube.com/embed/9m-x64bKfR4?si=_aQjZLP86HruNyWK" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- See More Videos Link -->
+    <p><a href="https://www.youtube.com/results?search_query=self+defence+techniques" target="_blank">See more self-defense videos on YouTube</a></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacts">
+    <h2>Emergency Contacts</h2>
+    <p>Here are some emergency contacts for your safety:</p>
+
+    <ul class="contact-list">
+      <li><strong>Police Station 1:</strong> 112 - City Police</li>
+      <li><strong>Police Station 2:</strong> 101 - District Police</li>
+      <li><strong>Emergency Medical Service:</strong> 108</li>
+      <li><strong>Fire Department:</strong> 101</li>
+      <li><strong>Women Helpline:</strong> 181</li>
+    </ul>
+
+    <div class="add-contact">
+      <p>Want to add your personal emergency contacts? Use your phone's contact list for quick access in case of emergency.</p>
+      <input type="text" placeholder="Add Contact Name" id="contact-name">
+      <input type="text" placeholder="Add Contact Number" id="contact-number">
+      <button onclick="addContact()">Add Contact</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Women's Safety. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Function to add a contact to the emergency contact list
+    function addContact() {
+      const contactName = document.getElementById('contact-name').value;
+      const contactNumber = document.getElementById('contact-number').value;
+
+      if (contactName && contactNumber) {
+        const contactList = document.querySelector('.contact-list');
+        const newContact = document.createElement('li');
+        newContact.innerHTML = <strong>${contactName}:</strong> ${contactNumber};
+        contactList.appendChild(newContact);
+
+        // Clear input fields after adding the contact
+        document.getElementById('contact-name').value = '';
+        document.getElementById('contact-number').value = '';
+      } else {
+        alert('Please enter both name and number.');
+      }
+    }
+
+    // Function to handle form submission for Register/Login
+    document.getElementById('registerForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const phone = document.getElementById('phone').value;
+      const password = document.getElementById('password').value;
+      const otp = document.getElementById('otp').value;
+
+      if (phone && password && otp) {
+        alert('Successfully Registered/Logged In!');
+      } else {
+        alert('Please fill all fields!');
+      }
+    });
+  </script>
+
+</body>
+</html>
